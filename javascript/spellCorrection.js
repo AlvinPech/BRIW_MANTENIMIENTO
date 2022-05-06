@@ -6,7 +6,7 @@
          "Buscador/spellcheck.php",
          { name: input },
          function(data) {
-
+           //alert(data);
            showCorrection(data);
          }
        );
@@ -15,6 +15,12 @@
    });
 
    function showCorrection(data) {
+
+    if(data !== ""){
+      var element = document.getElementById("rsult");
+     element.classList.remove("hidden");
+    }
+     
       var x = document.getElementById("opcion");
       if (data != "") {
         x.style.display = "block";
