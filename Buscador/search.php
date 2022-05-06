@@ -1,5 +1,5 @@
 <?php
-
+require_once('semanticExpansion.php');
 require_once('getSearch.php');
 
 function solrSearch($string, $filters){
