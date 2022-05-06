@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     outline: none;
 }
 
@@ -11,18 +11,37 @@ img.animated-gif{
   height: auto;
 
 }
+h1{
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo{
+   margin-left: 40%;
+   margin-top: 7%;
+   font-size: 3.5rem;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-image: url("../image/textura01.png");
+   -webkit-text-stroke: 2px;
+   -webkit-text-stroke-color: #fff;
+}
 
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #333;
+    
+    background: #0f0c29; 
+    background: -webkit-linear-gradient( #24243e, #0f0c29);  
+    background: linear-gradient( #24243e, #0f0c29); 
+
     color: white;
 }
 
 .logo {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     margin: .5rem;
 }
 
@@ -67,7 +86,11 @@ img.animated-gif{
 }
 
 body {
-    background: url("../image/bg.jpg") center;
+   
+    background: #009FFF; 
+    background: -webkit-linear-gradient(80deg, #ec2F4B, #009FFF); 
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+   
     background-size: auto;
     width: 100%;
     height: 100vh;
@@ -78,8 +101,11 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6);
-    max-width: 550px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border: solid 1px rgb(255,255,255,05);
+    width: 36%;
+    height: 13%;
     border-radius: 5px;
 }
 
@@ -99,7 +125,7 @@ body {
 } */
 
 .opcion p {
-    color: #ffec00;
+    color: #fff;
 }
 
 /* .correccion .opcion ul li {
@@ -118,10 +144,9 @@ body {
 
 .search form .input {
     width: 85%;
+    height: 85%;
     padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
+  
 }
 
 .left {
@@ -129,7 +154,9 @@ body {
     top: 35% !important;
     left: 3% !important;
     transform: translate(-0%, -50%);
-    background: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border: solid 1px rgb(255,255,255,05);
     max-width: 250px !important;
     border-radius: 5px !important;
     width: 100%;
@@ -137,7 +164,7 @@ body {
 }
 
 .left p {
-    color: #ffec00;
+    color: #fff;
 }
 
 .left ul li {
@@ -158,14 +185,18 @@ body {
 
 .results {
     position: absolute;
+    margin-top: 1%;
     top: 47.5%;
     left: 50%;
     transform: translate(-50%, -0%);
-    background: rgba(0, 0, 0, 0.6);
-    max-width: 550px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border: solid 1px rgb(255,255,255,05);
+    max-width: 555px;
     width: 100%;
     padding: 15px;
     border-radius: 5px;
+  
 }
 
 .gif {
@@ -202,7 +233,9 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border: solid 1px rgb(255,255,255,05);
     max-width: 600px;
     border-radius: 5px;
 }
@@ -216,30 +249,48 @@ body {
 }
 
 .links form .textarea {
-    width: 75%;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    resize: none;
+  
+    height: 60px;
+    margin-right: 2px;
+    width: 80%;
 }
 
 form .searchbtn {
-    background-color: #ffec00;
-    width: 10%;
-    border-radius: 5px;
-    position: relative;
+
+    width: 11%;
+    height: 56px !important;
+    background:#1281c6;
+    border-radius:5px;
+    border: solid 1px #fff;
     cursor: pointer;
+    
+}   
+.searchbtn:hover{
+    background:#096096;
+}
+
+svg{
+    margin-top: 30%;
+    margin-left: 32%;
+    color: #fff;
 }
 
 .syncbtn, .crawlerbtn {
-    background-color: #ffec00;
-    width: 10%;
+    background-color: #1281c6;;
+    width: 9%;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+    color: #fff;
+    border: solid 1px #fff;
+}
+.crawlerbtn{
+    margin-left: 5px;
 }
 
+.syncbtn:hover,.crawlerbtn:hover{
+    background:#096096;
+}
 form .searchbtn .fas {
     position: absolute;
     top: 50%;
@@ -275,7 +326,10 @@ form .searchbtn .fas {
         width: 100%;
         flex-direction: column;
     }
-
+    .titulo{
+        margin-left: 10%;
+        margin-top: 30%;
+    }
     .navbar-links ul li{
         text-align: center;
     }
@@ -291,10 +345,13 @@ form .searchbtn .fas {
     .search{
         width: 85%;
     }
-
+    .left{
+        margin-top: -15%;
+        margin-left: 15%;
+    }
     .results {
         position: relative;
-        top: 70%;
+        margin-top: -10%;
         width: 85%;
     }
 }
